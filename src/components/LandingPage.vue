@@ -14,7 +14,7 @@ export default {
   name: 'LandingPage',
   data() {
     return {
-      items: [] // Initialize items as an empty array
+      items: [] 
     };
   },
   methods: {
@@ -28,7 +28,7 @@ export default {
           return response.json();
         })
         .then(data => {
-          this.items = data.data; // Assuming data is an array of items
+          this.items = data.data;
         })
         .catch(error => {
           console.log('Unsuccessful : ', error);
@@ -40,7 +40,7 @@ export default {
 
 <style>
 .scroll-container {
-  height: 200px; /* Adjust the height as needed */
+  height: 200px; 
   overflow-y: auto;
   border: 1px solid #ccc;
   padding: 10px;
